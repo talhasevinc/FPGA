@@ -7,7 +7,7 @@
 
 ## TESTS <br />
 
-### Test-1 <br />
+## Test-1 <br />
 
 **Configuration of SPI**
 
@@ -23,7 +23,7 @@
 ![RX_1](https://user-images.githubusercontent.com/34924065/155884082-fece9626-8f90-4445-8216-8bafac38814c.PNG)
 
 
-### Test-2 <br />
+## Test-2 <br />
 
 **Configuration of SPI**
 
@@ -40,7 +40,7 @@
 
 ![RX_2](https://user-images.githubusercontent.com/34924065/155884160-ec01d474-3d32-442b-aba5-d7b3a7519f05.PNG)
 
-### Test-3 <br />
+## Test-3 <br />
 
 **Configuration of SPI**
 
