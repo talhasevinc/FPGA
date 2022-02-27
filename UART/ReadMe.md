@@ -11,12 +11,12 @@ and the 'even' and 'odd' states of the parity bit were programmed with a 'generi
 <br />		stopLogic : std_logic := '1';
 <br />		clockFreq : integer   := 100_000_000
 
-**bitNumber:** Number of bits to be transferred at once
-**baudRate:** Baud rate of Uart Module
-**parity:** Parity enable(Even or Odd)/disable.  Set 0 ==> Even Set 1 ==> Odd Set 'U' ==> disable parity
-**stopBits:** Length of stop bit . Generally, in uart system, this is 1 bit. But it can be 2 bits.
-**stopLogic:** Logic state of stop bit. '0' or '1' can be setted.
-**clockFreq:** : System main clock frequency.
+<br />**bitNumber:** Number of bits to be transferred at once
+<br />**baudRate:** Baud rate of Uart Module
+<br />**parity:** Parity enable(Even or Odd)/disable.  Set 0 ==> Even Set 1 ==> Odd Set 'U' ==> disable parity
+<br />**stopBits:** Length of stop bit . Generally, in uart system, this is 1 bit. But it can be 2 bits.
+<br />**stopLogic:** Logic state of stop bit. '0' or '1' can be setted.
+<br />**clockFreq:** : System main clock frequency.
 
 ## TESTS
 
