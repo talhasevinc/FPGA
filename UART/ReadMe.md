@@ -5,6 +5,11 @@ and the 'even' and 'odd' states of the parity bit were programmed with a 'generi
 
 ## TESTS
 
+**TX Buffer:**
+
+![TxBuf_1](https://user-images.githubusercontent.com/34924065/155885129-d7d6e486-e442-4e4f-a501-17b67cd666ee.PNG)
+
+
 ### Test-1
 
 **Configuration of UART**
