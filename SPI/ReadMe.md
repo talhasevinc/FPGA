@@ -2,6 +2,9 @@
 
 **This design implement 4 modes of SPI communication.** <br />
 
+![9f580c29-505d-4d78-abc5-f0dc843c3280](https://user-images.githubusercontent.com/34924065/155884409-3145b78c-6b23-462c-bf4d-b4ab34b74fbc.jpg)
+
+
 ## TESTS <br />
 
 ### Test-1 <br />
