@@ -1,0 +1,84 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 16.01.2022 14:29:29
+-- Design Name: 
+-- Module Name: tb_UartReceiver - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity tb_UartReceiver is
+	Generic
+	(
+        bitNumber : integer := 8 ;
+		baudRate  : integer := 9600;
+		parity    : integer := -1 ;     --0:Even Parity 1:Odd Parity Others: None
+		stopBits  : integer := 1;
+		stopLogic : std_logic := '1';
+		clockFreq : integer := 100_000_000;
+		receiveNumber: integer := 100
+	);
+end tb_UartReceiver;
+
+architecture Behavioral of tb_UartReceiver is
+
+component UART_Receiver is
+	Generic
+	(
+        bitNumber : integer := 8 ;
+		baudRate  : integer := 9600;
+		parity    : integer := -1 ;     --0:Even Parity 1:Odd Parity Others: None
+		stopBits  : integer := 1;
+		stopLogic : std_logic := '1';
+		clockFreq : integer := 100_000_000;
+		receiveNumber: integer := 100
+	);
+    Port 
+	(
+
+        clock     : in  std_logic;
+		rxPin     : in std_logic       
+
+	);
+end component;
+signal clock : std_logic := '0';
+signal rxPin : std_logic := '1';
+
+begin
+
+STIM1: UART_Receiver
+	Generic
+	(
+        bitNumber =>bitNumber ,
+		baudRate  =>baudRate  ,
+		parity    =>parity    ,
+		stopBits  =>stopBits  ,
+		stopLogic =>stopLogic ,
+		clockFreq =>clockFreq ,
+		receiveNumber=>receiveNumber
+	)
+    Port 
+	(
+
+        clock     : in  std_logic;
+		rxPin     : in std_logic       
+
+	);
+
+end Behavioral;

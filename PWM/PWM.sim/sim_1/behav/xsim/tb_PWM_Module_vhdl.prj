@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../PWM.srcs/sources_1/new/PWM_Module.vhd" \
+"../../../../PWM.srcs/sim_1/new/tb_PWM_Module.vhd" \
+
+# Do not sort compile order
+nosort

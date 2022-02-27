@@ -1,0 +1,262 @@
+
+*** Running vivado
+    with args -log PWM_Module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PWM_Module.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source PWM_Module.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1253.535 ; gain = 0.000
+Command: read_checkpoint -auto_incremental -incremental C:/Users/sevin/Desktop/Projects/VHDL/PWM/PWM.srcs/utils_1/imports/synth_1/PWM_Module.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/sevin/Desktop/Projects/VHDL/PWM/PWM.srcs/utils_1/imports/synth_1/PWM_Module.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top PWM_Module -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9044
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PWM_Module' [C:/Users/sevin/Desktop/Projects/VHDL/PWM/PWM.srcs/sources_1/new/PWM_Module.vhd:27]
+INFO: [Synth 8-226] default block is never used [C:/Users/sevin/Desktop/Projects/VHDL/PWM/PWM.srcs/sources_1/new/PWM_Module.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'PWM_Module' (1#1) [C:/Users/sevin/Desktop/Projects/VHDL/PWM/PWM.srcs/sources_1/new/PWM_Module.vhd:27]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 2     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   21 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               27 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	              21x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   31 Bit        Muxes := 2     
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP highTime0, operation Mode is: A*B.
+DSP Report: operator highTime0 is absorbed into DSP highTime0.
+DSP Report: operator highTime0 is absorbed into DSP highTime0.
+DSP Report: Generating DSP highTime_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register highTime_reg is absorbed into DSP highTime_reg.
+DSP Report: operator highTime0 is absorbed into DSP highTime_reg.
+DSP Report: operator highTime0 is absorbed into DSP highTime_reg.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[47]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[46]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[45]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[44]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[43]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[42]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[41]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[40]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[39]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[38]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[37]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[36]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[35]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[34]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[33]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[32]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[31]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[30]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[29]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[28]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[27]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[26]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[25]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[24]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[23]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[22]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[21]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[20]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[19]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[18]) is unused and will be removed from module PWM_Module.
+WARNING: [Synth 8-3332] Sequential element (highTime_reg[17]) is unused and will be removed from module PWM_Module.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|PWM_Module  | A*B            | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|PWM_Module  | (PCIN>>17)+A*B | 21     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   656|
+|3     |DSP48E1 |     2|
+|4     |LUT1    |   112|
+|5     |LUT2    |   220|
+|6     |LUT3    |   202|
+|7     |LUT4    |    61|
+|8     |LUT5    |  1942|
+|9     |LUT6    |    20|
+|10    |FDRE    |   142|
+|11    |IBUF    |    66|
+|12    |OBUF    |    33|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  3457|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1253.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1253.535 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1253.535 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1253.535 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 658 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'PWM_Module' is not ideal for floorplanning, since the cellview 'PWM_Module' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1253.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 8d33d7a6
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1253.535 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sevin/Desktop/Projects/VHDL/PWM/PWM.runs/synth_1/PWM_Module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PWM_Module_utilization_synth.rpt -pb PWM_Module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 14 00:13:39 2022...

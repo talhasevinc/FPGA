@@ -1,0 +1,277 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sat Feb 12 21:33:09 2022
+# Process ID: 10944
+# Current directory: C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.runs/synth_1
+# Command line: vivado.exe -log top_UART.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_UART.tcl
+# Log file: C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.runs/synth_1/top_UART.vds
+# Journal file: C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.runs/synth_1\vivado.jou
+# Running On: DESKTOP-O23CI9L, OS: Windows, CPU Frequency: 3913 MHz, CPU Physical cores: 6, Host memory: 17075 MB
+#-----------------------------------------------------------
+source top_UART.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1251.832 ; gain = 0.000
+Command: read_checkpoint -auto_incremental -incremental C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/utils_1/imports/synth_1/UART_Transmitter.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/utils_1/imports/synth_1/UART_Transmitter.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_UART -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3284
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_UART' [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/top_UART.vhd:45]
+	Parameter bitNumber bound to: 8 - type: integer 
+	Parameter baudRate bound to: 9600 - type: integer 
+	Parameter parity bound to: 1'bx 
+	Parameter stopBits bound to: 1 - type: integer 
+	Parameter stopLogic bound to: 1'b1 
+	Parameter clockFreq bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'UART_Transmitter' declared at 'C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/UART_Transmitter.vhd:18' bound to instance 'TX_Module' of component 'UART_Transmitter' [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/top_UART.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'UART_Transmitter' [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/UART_Transmitter.vhd:41]
+	Parameter bitNumber bound to: 8 - type: integer 
+	Parameter baudRate bound to: 9600 - type: integer 
+	Parameter parity bound to: 1'bx 
+	Parameter stopBits bound to: 1 - type: integer 
+	Parameter stopLogic bound to: 1'b1 
+	Parameter clockFreq bound to: 100000000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element paritCalc_reg was removed.  [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/UART_Transmitter.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'UART_Transmitter' (1#1) [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/UART_Transmitter.vhd:41]
+	Parameter bitNumber bound to: 8 - type: integer 
+	Parameter baudRate bound to: 9600 - type: integer 
+	Parameter parity bound to: 1'bx 
+	Parameter stopBits bound to: 1 - type: integer 
+	Parameter stopLogic bound to: 1'b1 
+	Parameter clockFreq bound to: 100000000 - type: integer 
+	Parameter receiveNumber bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'UART_Receiver' declared at 'C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/UART_Receiver.vhd:9' bound to instance 'RX_Module' of component 'UART_Receiver' [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/top_UART.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'UART_Receiver' [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/UART_Receiver.vhd:31]
+	Parameter bitNumber bound to: 8 - type: integer 
+	Parameter baudRate bound to: 9600 - type: integer 
+	Parameter parity bound to: 1'bx 
+	Parameter stopBits bound to: 1 - type: integer 
+	Parameter stopLogic bound to: 1'b1 
+	Parameter clockFreq bound to: 100000000 - type: integer 
+	Parameter receiveNumber bound to: 100 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element dataNumber_reg was removed.  [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/UART_Receiver.vhd:201]
+WARNING: [Synth 8-6014] Unused sequential element resetVar_reg was removed.  [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/UART_Receiver.vhd:204]
+WARNING: [Synth 8-6014] Unused sequential element ReceiveBuffer_reg was removed. 
+INFO: [Synth 8-256] done synthesizing module 'UART_Receiver' (2#1) [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/UART_Receiver.vhd:31]
+WARNING: [Synth 8-3848] Net tXBuffer[9] in module/entity top_UART does not have driver. [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/top_UART.vhd:48]
+WARNING: [Synth 8-3848] Net tXBuffer[8] in module/entity top_UART does not have driver. [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/top_UART.vhd:48]
+WARNING: [Synth 8-3848] Net tXBuffer[7] in module/entity top_UART does not have driver. [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/top_UART.vhd:48]
+WARNING: [Synth 8-3848] Net tXBuffer[6] in module/entity top_UART does not have driver. [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/top_UART.vhd:48]
+WARNING: [Synth 8-3848] Net tXBuffer[5] in module/entity top_UART does not have driver. [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/top_UART.vhd:48]
+WARNING: [Synth 8-3848] Net tXBuffer[4] in module/entity top_UART does not have driver. [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/top_UART.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'top_UART' (3#1) [C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.srcs/sources_1/new/top_UART.vhd:45]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'UART_Transmitter'
+INFO: [Synth 8-802] inferred FSM for state register 'txState_reg' in module 'top_UART'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                              000
+                startbit |                               01 |                              001
+                    data |                               10 |                              010
+                 stopbit |                               11 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'sequential' in module 'UART_Transmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                    send |                              010 |                               01
+                s_finish |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txState_reg' using encoding 'one-hot' in module 'top_UART'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 6     
+	   8 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 6     
+	   8 Input    1 Bit        Muxes := 7     
+	   7 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    92|
+|3     |LUT1   |     8|
+|4     |LUT2   |   276|
+|5     |LUT3   |    36|
+|6     |LUT4   |    10|
+|7     |LUT5   |    13|
+|8     |LUT6   |    56|
+|9     |FDRE   |   272|
+|10    |FDSE   |     1|
+|11    |IBUF   |     2|
+|12    |OBUF   |    13|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+-----------------+------+
+|      |Instance    |Module           |Cells |
++------+------------+-----------------+------+
+|1     |top         |                 |   780|
+|2     |  RX_Module |UART_Receiver    |   370|
+|3     |  TX_Module |UART_Transmitter |   222|
++------+------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1251.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1251.832 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1251.832 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1251.832 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 92 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1251.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: dd8d1ff0
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1251.832 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.runs/synth_1/top_UART.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_UART_utilization_synth.rpt -pb top_UART_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 12 21:33:57 2022...

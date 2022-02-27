@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "half_adder_behav" "xil_defaultlib.half_adder" -log "elaborate.log" 

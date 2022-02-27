@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sat Feb 12 21:33:09 2022
+# Process ID: 10944
+# Current directory: C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.runs/synth_1
+# Command line: vivado.exe -log top_UART.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_UART.tcl
+# Log file: C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.runs/synth_1/top_UART.vds
+# Journal file: C:/Users/sevin/Desktop/Projects/VHDL/UART/UART.runs/synth_1\vivado.jou
+# Running On: DESKTOP-O23CI9L, OS: Windows, CPU Frequency: 3913 MHz, CPU Physical cores: 6, Host memory: 17075 MB
+#-----------------------------------------------------------
+source top_UART.tcl -notrace
