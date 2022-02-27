@@ -2,6 +2,21 @@
 
 **The implemented UART hardware, the bit width of the data to be transferred,the baud rate value of the communication, the length and logic value of the stop bit,
 and the 'even' and 'odd' states of the parity bit were programmed with a 'generic' language.** <br />
+**Generic Variables**  <br />
+
+<br />    bitNumber : integer   := 8 ;
+<br />		baudRate  : integer   := 9600;
+<br />		parity    : std_logic := 'U' ;     
+<br />		stopBits  : integer   := 1;
+<br />		stopLogic : std_logic := '1';
+<br />		clockFreq : integer   := 100_000_000
+
+**bitNumber:** Number of bits to be transferred at once
+**baudRate:** Baud rate of Uart Module
+**parity:** Parity enable(Even or Odd)/disable.  Set 0 ==> Even Set 1 ==> Odd Set 'U' ==> disable parity
+**stopBits:** Length of stop bit . Generally, in uart system, this is 1 bit. But it can be 2 bits.
+**stopLogic:** Logic state of stop bit. '0' or '1' can be setted.
+**clockFreq:** : System main clock frequency.
 
 ## TESTS
 
