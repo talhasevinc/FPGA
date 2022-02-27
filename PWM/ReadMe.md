@@ -11,11 +11,11 @@ You can set this variables whatever and whenever you want.
 # TESTS
 
 ## Test-1
-**Frequency : 1000 Hz**
-**Duty Cycle: 0-100**
+**Frequency : 1000 Hz** <br />
+**Duty Cycle: 0-100** <br />
 
-**Period : 1s / 1000 = 1 mS**
-Duty:
+<br /> **Period : 1s / 1000 = 1 mS**
+<br /> **Duty:** <br />
     Assume 10 => High Time: Period*duty/100 = 1 ms * 15 / 100 = 150 uS 
 ![PWM1](https://user-images.githubusercontent.com/34924065/155883479-a672a914-e73e-46b7-9031-6d39ab8a6223.PNG)
 
