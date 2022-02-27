@@ -2,14 +2,15 @@
 
 **The implemented UART hardware, the bit width of the data to be transferred,the baud rate value of the communication, the length and logic value of the stop bit,
 and the 'even' and 'odd' states of the parity bit were programmed with a 'generic' language.** <br />
+
 **Generic Variables**  <br />
 
-<br />    bitNumber : integer   := 8 ;
-<br />		baudRate  : integer   := 9600;
-<br />		parity    : std_logic := 'U' ;     
-<br />		stopBits  : integer   := 1;
-<br />		stopLogic : std_logic := '1';
-<br />		clockFreq : integer   := 100_000_000
+<br />       bitNumber : integer   := 8 ;
+<br />		   baudRate  : integer   := 9600;
+<br />		   parity    : std_logic := 'U' ;     
+<br />		   stopBits  : integer   := 1;
+<br />		   stopLogic : std_logic := '1';
+<br />		   clockFreq : integer   := 100_000_000
 
 <br />**bitNumber:** Number of bits to be transferred at once
 <br />**baudRate:** Baud rate of Uart Module
